@@ -1,0 +1,28 @@
+{
+"manifest_version": 2,
+"name": "youtube adds skip",
+"version": "0.3.1",
+"description": "no youtube ads",
+
+"content_scripts": [
+    {
+      "matches": [
+        "http://www.youtube.com/*",
+        "https://www.youtube.com/*"
+      ],
+
+      "js": ["script.js"]
+    }
+  ],
+
+  "browser_action": {
+    "default_icon": {                   
+      "19": "icon8.png",
+      "38": "icon16.png",
+      "48": "icon32.png",
+      "128": "icon64.png"        
+    },
+    "default_popup": "index.html"
+  }
+
+}
